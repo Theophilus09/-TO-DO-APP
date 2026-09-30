@@ -31,10 +31,12 @@ app.use(notFound);
 app.use(errorHandler);
 
 // Only listen locally; Vercel exports the app as a handler
+// Before (Lines 34-39)
+// Only listen locally; Vercel exports the app as a handler
 if (process.env.NODE_ENV !== 'production') {
-    app.listen(PORT, () => {
-        console.log(`Server running in development mode on http://localhost:${PORT}`);
-    });
+  app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Server running in development mode on http://localhost:${PORT}`);
+  });
 }
 
 export default app;
