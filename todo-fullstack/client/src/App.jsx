@@ -8,13 +8,30 @@ import TodoList from './components/TodoList';
 import TodoStats from './components/TodoStats';
 import TodoFilters from './components/TodoFilters';
 
-// Note Components
-import NoteForm from './components/notes/NoteForm.jsx';
-import NoteList from './components/notes/NoteList.jsx';
+// Note Components (Capital 'N' to match the folder)
+import NoteForm from './components/Notes/NoteForm';
+import NoteList from './components/Notes/NoteList';
 
 // Shared Components
 import SearchBar from './components/SearchBar';
 import ThemeToggle from './components/ThemeToggle';
+// import React, { useState, useEffect } from 'react';
+// import * as todoApi from './services/todoApi';
+// import * as noteApi from './services/noteApi';
+
+// // Todo Components
+// import TodoForm from './components/TodoForm';
+// import TodoList from './components/TodoList';
+// import TodoStats from './components/TodoStats';
+// import TodoFilters from './components/TodoFilters';
+
+// // Note Components
+// import NoteForm from './components/notes/NoteForm.jsx';
+// import NoteList from './components/notes/NoteList.jsx';
+
+// // Shared Components
+// import SearchBar from './components/SearchBar';
+// import ThemeToggle from './components/ThemeToggle';
 
 export default function App() {
   // Navigation State
