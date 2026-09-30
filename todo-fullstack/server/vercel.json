@@ -1,0 +1,26 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "todo-fullstack/server/server.js",
+            "use": "@vercel/node"
+        },
+        {
+            "src": "todo-fullstack/client/package.json",
+            "use": "@vercel/static-build",
+            "config": {
+                "distDir": "dist"
+            }
+        }
+    ],
+    "routes": [
+        {
+            "src": "/api/(.*)",
+            "dest": "todo-fullstack/server/server.js"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "todo-fullstack/client/$1"
+        }
+    ]
+}
